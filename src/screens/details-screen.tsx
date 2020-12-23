@@ -96,21 +96,6 @@ export const DetailsScreen: React.FC<Props> = ({ route, navigation }) => {
           description={vote_average}
           left={() => <List.Icon icon="star" />}
         />
-        <List.Item
-          title="Release date"
-          description={release_date}
-          left={() => <List.Icon icon="calendar" />}
-        />
-        <List.Item
-          title="Votes"
-          description={vote_count}
-          left={() => <List.Icon icon="account" />}
-        />
-        <List.Item
-          title="Avarage Rating"
-          description={vote_average}
-          left={() => <List.Icon icon="star" />}
-        />
       </ScrollView>
     </View>
   );
