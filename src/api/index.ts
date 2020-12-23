@@ -15,7 +15,7 @@ const api = axios.create({
 export const searchMovies = async (query: string): Promise<SearchResonpose> => {
   const result = await api.get<SearchResonpose>("/search/movie", {
     params: {
-      query: query || "no country for old men",
+      query,
     },
   });
 
